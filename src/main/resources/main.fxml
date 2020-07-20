@@ -1,7 +1,25 @@
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.GridPane?>
-
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
 <GridPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.michalgarnczarski.Controller">
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.michalgarnczarski.Controller"
+           hgap="10" vgap="10" style="-fx-padding: 10">
+
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="0" text="Lista zajęć:"/>
+    <ComboBox fx:id="classesListComboBox" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Button fx:id="addClassesListButton" GridPane.rowIndex="0" GridPane.columnIndex="2" text="Dodaj"/>
+    <Button fx:id="editClassesListButton" GridPane.rowIndex="0" GridPane.columnIndex="3" text="Edytuj"/>
+
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="Lista sal:"/>
+    <ComboBox fx:id="classroomsListComboBox" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Button fx:id="addClassroomsListButton" GridPane.rowIndex="1" GridPane.columnIndex="2" text="Dodaj"/>
+    <Button fx:id="editClassroomsListButton" GridPane.rowIndex="1" GridPane.columnIndex="3" text="Edytuj"/>
+
+    <Label GridPane.rowIndex="2" GridPane.columnIndex="0" text="Algorytm:"/>
+    <ComboBox fx:id="planningAlgorithmsList" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Button fx:id="generateScheduleButton" GridPane.rowIndex="3" GridPane.columnIndex="0" text="Generuj plan"/>
 
 </GridPane>
