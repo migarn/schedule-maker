@@ -2,7 +2,6 @@ package com.michalgarnczarski;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
@@ -29,16 +28,18 @@ public class MainController {
     }
 
     private void openNewWindow(String title, String path, int width, int height) {
-        Parent root;
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource(path));
             Scene scene = new Scene(fxmlLoader.load(), width, height);
             Stage stage = new Stage();
-            stage.initModality(Modality.WINDOW_MODAL); //
-            stage.initOwner(mainPane.getScene().getWindow()); //
+            stage.initModality(Modality.WINDOW_MODAL);
+            Stage parentStage = (Stage) mainPane.getScene().getWindow();
+            stage.initOwner(parentStage);
             stage.setTitle(title);
             stage.setScene(scene);
+            stage.setX(parentStage.getX() + 50);
+            stage.setY(parentStage.getY() + 50);
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
