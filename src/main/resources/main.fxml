@@ -12,12 +12,15 @@
     <ComboBox fx:id="classesListComboBox" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
     <Button fx:id="addClassesListButton" GridPane.rowIndex="0" GridPane.columnIndex="2" text="Dodaj"
             onAction="#openAddClassesListWindow"/>
-    <Button fx:id="editClassesListButton" GridPane.rowIndex="0" GridPane.columnIndex="3" text="Edytuj"/>
+    <Button fx:id="editClassesListButton" GridPane.rowIndex="0" GridPane.columnIndex="3" text="Edytuj"
+            onAction="#openEditClassesListWindow"/>
 
     <Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="Lista sal:"/>
     <ComboBox fx:id="classroomsListComboBox" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
-    <Button fx:id="addClassroomsListButton" GridPane.rowIndex="1" GridPane.columnIndex="2" text="Dodaj"/>
-    <Button fx:id="editClassroomsListButton" GridPane.rowIndex="1" GridPane.columnIndex="3" text="Edytuj"/>
+    <Button fx:id="addClassroomsListButton" GridPane.rowIndex="1" GridPane.columnIndex="2" text="Dodaj"
+            onAction="#openAddClassroomsListWindow"/>
+    <Button fx:id="editClassroomsListButton" GridPane.rowIndex="1" GridPane.columnIndex="3" text="Edytuj"
+            onAction="#openEditClassroomsListWindow"/>
 
     <Label GridPane.rowIndex="2" GridPane.columnIndex="0" text="Algorytm:"/>
     <ComboBox fx:id="planningAlgorithmsList" GridPane.rowIndex="2" GridPane.columnIndex="1"/>

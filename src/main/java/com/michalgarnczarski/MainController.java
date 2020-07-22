@@ -16,6 +16,12 @@ public class MainController {
     GridPane mainPane;
     @FXML
     Button addClassesListButton;
+    @FXML
+    Button editClassesListButton;
+    @FXML
+    Button addClassroomsListButton;
+    @FXML
+    Button editClassroomsListButton;
 
     public void initialize() {
 
@@ -24,7 +30,21 @@ public class MainController {
     @FXML
     private void openAddClassesListWindow() {
         openNewWindow("Dodaj listę zajęć", "/add-classes-list.fxml",300,275);
+    }
 
+    @FXML
+    private void openEditClassesListWindow() {
+        openNewWindow("Edytuj listę zajęć", "/edit-classes-list.fxml",300,275);
+    }
+
+    @FXML
+    private void openAddClassroomsListWindow() {
+        openNewWindow("Dodaj listę sal", "/add-classrooms-list.fxml",300,275);
+    }
+
+    @FXML
+    private void openEditClassroomsListWindow() {
+        openNewWindow("Edytuj listę sal", "/edit-classrooms-list.fxml",300,275);
     }
 
     private void openNewWindow(String title, String path, int width, int height) {
