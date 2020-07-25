@@ -2,7 +2,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 
+<?import javafx.scene.control.TextField?>
 <GridPane fx:id="mainPane" xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
           fx:controller="com.michalgarnczarski.MainController"
@@ -22,9 +24,15 @@
     <Button fx:id="editClassroomsListButton" GridPane.rowIndex="1" GridPane.columnIndex="3" text="Edytuj"
             onAction="#openEditClassroomsListWindow"/>
 
-    <Label GridPane.rowIndex="2" GridPane.columnIndex="0" text="Algorytm:"/>
-    <ComboBox fx:id="planningAlgorithmsList" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Label GridPane.rowIndex="2" GridPane.columnIndex="0" text="Najwcześniejszy początek zajęć:"/>
+    <TextField fx:id="earliestHourField" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="3"/>
 
-    <Button fx:id="generateScheduleButton" GridPane.rowIndex="3" GridPane.columnIndex="0" text="Generuj plan"/>
+    <Label GridPane.rowIndex="3" GridPane.columnIndex="0" text="Najpóźniejszy koniec zajęć:"/>
+    <TextField fx:id="latestHourField" GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.columnSpan="3"/>
+
+    <Label GridPane.rowIndex="4" GridPane.columnIndex="0" text="Algorytm:"/>
+    <ComboBox fx:id="planningAlgorithmsList" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Button fx:id="generateScheduleButton" GridPane.rowIndex="5" GridPane.columnIndex="0" text="Generuj plan"/>
 
 </GridPane>
