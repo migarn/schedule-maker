@@ -15,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/../Starvation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Starvation/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TaskExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TaskExample/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Threads/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Threads/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/michalgarnczarski/Classroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/michalgarnczarski/Classroom.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/michalgarnczarski/Classroom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="136">
+              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -82,6 +81,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/michalgarnczarski/Group.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -134,6 +142,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/michalgarnczarski/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/michalgarnczarski/Classroom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/michalgarnczarski/Classes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/michalgarnczarski/Group.java" />
       </list>
     </option>
   </component>
@@ -215,7 +224,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595958042190" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595958173401" />
     <property name="last_opened_file_path" value="C:/java fx/javafx-sdk-11.0.2/lib/javafx.web.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -277,7 +286,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -296,7 +304,7 @@
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.28896105" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.28896105" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Maven" order="2" />
@@ -437,8 +445,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/michalgarnczarski/Classroom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="136">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/michalgarnczarski/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
         </state>
       </provider>
     </entry>
