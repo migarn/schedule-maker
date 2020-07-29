@@ -1,4 +1,6 @@
 *.jar
 *.zip
+*.xls
+*.xlsx
 /out
 /target
