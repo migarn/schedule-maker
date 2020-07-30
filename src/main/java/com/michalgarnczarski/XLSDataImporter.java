@@ -1,30 +1,35 @@
 package com.michalgarnczarski;
 
-import java.io.IOException;
-import java.util.LinkedHashMap;
-
 import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
 import java.io.File;
+import java.io.IOException;
 
 public class XLSDataImporter {
 
-    private String path;
+    // Do zastanowienia, czy potrzebne są pola
+
     private String fileName;
     private Workbook importedData;
 
     public XLSDataImporter(String path) {
-        this.path = path; // potrzebne?
-        this.path = parseFileName();
-        this.importedData = importData(path);
+        File file = new File(path);
+        this.importedData = importData(file);
+        this.fileName = parseFileName(file);
     }
 
-    private Workbook importData(String path) {
+    private Workbook importData(File file) {
         try {
-            return WorkbookFactory.create(new File(path));
+            return WorkbookFactory.create(file);
         } catch (EncryptedDocumentException | IOException e) {
             e.printStackTrace();
             return null;
         }
+    }
+
+    private String parseFileName(File file) {
+        return file.getName().replaceAll(".xlsx|.xls","");
     }
 }

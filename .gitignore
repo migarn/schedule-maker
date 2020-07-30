@@ -2,5 +2,6 @@
 *.zip
 *.xls
 *.xlsx
+/src/main/java/com/michalgarnczarski/Demo.java
 /out
 /target
