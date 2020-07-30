@@ -1,0 +1,33 @@
+package com.michalgarnczarski;
+
+import org.apache.poi.ss.usermodel.Sheet;
+
+public class ClassroomsListImporter extends XLSDataImporter {
+
+    public ClassroomsListImporter(String path) {
+        super(path);
+    }
+
+    public ClassroomsList importClassroomsList() {
+
+        // obsłużyć wyjątki
+
+        ClassroomsList classroomsList = new ClassroomsList(this.fileName);
+
+        Sheet sheet = this.importedData.getSheetAt(0);
+
+        for (int i = 1; i < sheet.getLastRowNum() + 1; i++) {
+            String number = sheet.getRow(i).getCell(0).toString();
+
+            System.out.println(number);
+
+            int capacity = (int) Double.parseDouble(sheet.getRow(i).getCell(1).toString());
+
+            System.out.println(capacity);
+
+            classroomsList.addClassroom(number, capacity);
+        }
+
+        return classroomsList;
+    }
+}

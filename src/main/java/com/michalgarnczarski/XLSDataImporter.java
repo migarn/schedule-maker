@@ -11,8 +11,8 @@ public class XLSDataImporter {
 
     // Do zastanowienia, czy potrzebne są pola
 
-    private String fileName;
-    private Workbook importedData;
+    protected String fileName;
+    protected Workbook importedData;
 
     public XLSDataImporter(String path) {
         File file = new File(path);

@@ -18,4 +18,10 @@ public class ClassroomsList {
     public void setClassrooms(Set<Classroom> classrooms) {
         this.classrooms = classrooms;
     }
+
+    public void addClassroom(String number, int capacity) {
+        this.classrooms.add(new Classroom(number, capacity));
+    }
+
+
 }
