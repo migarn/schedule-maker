@@ -17,14 +17,8 @@ public class ClassroomsListImporter extends XLSDataImporter {
         Sheet sheet = this.importedData.getSheetAt(0);
 
         for (int i = 1; i < sheet.getLastRowNum() + 1; i++) {
-            String number = sheet.getRow(i).getCell(0).toString();
-
-            System.out.println(number);
-
+            String number = sheet.getRow(i).getCell(0).toString().replace(".0","");
             int capacity = (int) Double.parseDouble(sheet.getRow(i).getCell(1).toString());
-
-            System.out.println(capacity);
-
             classroomsList.addClassroom(number, capacity);
         }
 

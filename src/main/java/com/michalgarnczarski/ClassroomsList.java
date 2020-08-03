@@ -1,14 +1,16 @@
 package com.michalgarnczarski;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class ClassroomsList {
 
     private String name;
-    private Set<Classroom> classrooms;
+    private Set<Classroom> classrooms; // zamienić na listę
 
     public ClassroomsList(String name) {
         this.name = name;
+        this.classrooms = new HashSet<>();
     }
 
     public Set<Classroom> getClassrooms() {
