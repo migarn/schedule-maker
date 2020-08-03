@@ -3,7 +3,6 @@ package com.michalgarnczarski;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -21,6 +20,9 @@ public class XLSDataImporter {
     }
 
     private Workbook importData(File file) {
+
+        // Method returns xls(x) file as poi Workbook object.
+
         try {
             return WorkbookFactory.create(file);
         } catch (EncryptedDocumentException | IOException e) {
@@ -30,6 +32,9 @@ public class XLSDataImporter {
     }
 
     private String parseFileName(File file) {
-        return file.getName().replaceAll(".xlsx|.xls","");
+
+        // Method returns filename without an extension.
+
+        return file.getName().replaceAll(".*","");
     }
 }
