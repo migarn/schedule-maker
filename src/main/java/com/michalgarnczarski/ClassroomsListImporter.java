@@ -8,9 +8,7 @@ public class ClassroomsListImporter extends XLSDataImporter {
         super(path);
     }
 
-    public ClassroomsList importClassroomsList() {
-
-        // obsłużyć wyjątki
+    public ClassroomsList importClassroomsList() throws Exception {
 
         ClassroomsList classroomsList = new ClassroomsList(this.fileName);
 
