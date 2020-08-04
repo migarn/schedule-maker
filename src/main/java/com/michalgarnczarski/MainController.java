@@ -38,12 +38,15 @@ public class MainController {
 
         // Set hour fields format as HH:mm and set defaults values.
 
-        setHoursMinutesFormat(earliestHourField);
-        setHoursMinutesFormat(latestHourField);
-        earliestHourField.setText("8:00");
-        latestHourField.setText("20:00");
+        setHoursMinutesFormat(this.earliestHourField);
+        setHoursMinutesFormat(this.latestHourField);
+        this.earliestHourField.setText("8:00");
+        this.latestHourField.setText("20:00");
 
         // Populate classroomsListComboBox with classrooms list's names parsed from files.
+
+        FilesListCreator filesListCreator = new FilesListCreator();
+        this.classroomsListComboBox.getItems().addAll(filesListCreator.createList("data\\classrooms"));
 
     }
 

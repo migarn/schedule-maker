@@ -35,6 +35,6 @@ public class XLSDataImporter {
 
         // Method returns filename without an extension.
 
-        return file.getName().replaceAll(".*","");
+        return file.getName().replaceAll("\\.[^.]*$","");
     }
 }
