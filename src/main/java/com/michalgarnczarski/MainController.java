@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.layout.GridPane;
@@ -17,19 +18,21 @@ import java.text.SimpleDateFormat;
 public class MainController {
 
     @FXML
-    GridPane mainPane;
+    private GridPane mainPane;
     @FXML
-    Button addClassesListButton;
+    private Button addClassesListButton;
     @FXML
-    Button editClassesListButton;
+    private Button editClassesListButton;
     @FXML
-    Button addClassroomsListButton;
+    private Button addClassroomsListButton;
     @FXML
-    Button editClassroomsListButton;
+    private Button editClassroomsListButton;
     @FXML
-    TextField earliestHourField;
+    private TextField earliestHourField;
     @FXML
-    TextField latestHourField;
+    private TextField latestHourField;
+    @FXML
+    private ComboBox classroomsListComboBox;
 
     public void initialize() {
 
@@ -39,6 +42,8 @@ public class MainController {
         setHoursMinutesFormat(latestHourField);
         earliestHourField.setText("8:00");
         latestHourField.setText("20:00");
+
+        // Populate classroomsListComboBox with classrooms list's names parsed from files.
 
     }
 
