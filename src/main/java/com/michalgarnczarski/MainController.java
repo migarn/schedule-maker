@@ -32,6 +32,8 @@ public class MainController {
     @FXML
     private TextField latestHourField;
     @FXML
+    private ComboBox classesListComboBox;
+    @FXML
     private ComboBox classroomsListComboBox;
 
     public void initialize() {
@@ -43,10 +45,11 @@ public class MainController {
         this.earliestHourField.setText("8:00");
         this.latestHourField.setText("20:00");
 
-        // Populate classroomsListComboBox with classrooms list's names parsed from files.
+        // Populate classesListComboBox and classroomsListComboBox with list's names parsed from files.
 
         FilesListCreator filesListCreator = new FilesListCreator();
-        this.classroomsListComboBox.getItems().addAll(filesListCreator.createList("data\\classrooms"));
+        this.classesListComboBox.getItems().addAll(filesListCreator.createList("data\\classes"));
+        this.classroomsListComboBox.getItems().addAll(filesListCreator.createList("data\\classrooms")); //uniwersalna ścieżka?
 
     }
 
