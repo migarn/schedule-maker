@@ -12,6 +12,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.converter.DateStringConverter;
 
+import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 
@@ -48,8 +49,8 @@ public class MainController {
         // Populate classesListComboBox and classroomsListComboBox with list's names parsed from files.
 
         FilesListCreator filesListCreator = new FilesListCreator();
-        this.classesListComboBox.getItems().addAll(filesListCreator.createList("data\\classes"));
-        this.classroomsListComboBox.getItems().addAll(filesListCreator.createList("data\\classrooms")); //uniwersalna ścieżka?
+        this.classesListComboBox.getItems().addAll(filesListCreator.createList("data" + File.separator +"classes"));
+        this.classroomsListComboBox.getItems().addAll(filesListCreator.createList("data" + File.separator +"classrooms"));
 
     }
 
