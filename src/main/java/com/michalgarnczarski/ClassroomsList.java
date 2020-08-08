@@ -14,11 +14,11 @@ public class ClassroomsList {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public List<Classroom> getClassrooms() {
-        return classrooms;
+        return this.classrooms;
     }
 
     public void setClassrooms(List<Classroom> classrooms) {
@@ -28,6 +28,4 @@ public class ClassroomsList {
     public void addClassroom(String number, int capacity) {
         this.classrooms.add(new Classroom(number, capacity));
     }
-
-
 }
