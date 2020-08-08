@@ -24,7 +24,7 @@ public class ClassesList {
         this.classes = classes;
     }
 
-    public void addClasses(String number, int capacity) {
-        this.classrooms.add(new Classroom(number, capacity));
+    public void addClasses(Classes classes) {
+        this.classes.add(classes);
     }
 }
